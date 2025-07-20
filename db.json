@@ -5,6 +5,15 @@
       "name": "trip to mombasa",
       "targetAmount": 20000,
       "savedAmount": 0
+    },
+    {
+      "id": "e9a6",
+      "name": "trip to mombasa",
+      "targetAmount": 20000,
+      "savedAmount": 0,
+      "category": "fun",
+      "deadline": "2025-02-07",
+      "createdAt": "2025-07-20"
     }
   ],
   "deposits": [
