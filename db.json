@@ -1,0 +1,17 @@
+{
+  "goals": [
+    {
+      "id": "d1b4",
+      "name": "trip to mombasa",
+      "targetAmount": 20000,
+      "savedAmount": 0
+    }
+  ],
+  "deposits": [
+    {
+      "id": "32dc",
+      "goalId": null,
+      "amount": 1000
+    }
+  ]
+}
