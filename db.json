@@ -1,19 +1,13 @@
 {
   "goals": [
     {
-      "id": "d1b4",
-      "name": "trip to mombasa",
-      "targetAmount": 20000,
-      "savedAmount": 0
-    },
-    {
-      "id": "e9a6",
-      "name": "trip to mombasa",
-      "targetAmount": 20000,
+      "id": "dc16",
+      "name": "trip to indian",
+      "targetAmount": 50000,
       "savedAmount": 0,
-      "category": "fun",
-      "deadline": "2025-02-07",
-      "createdAt": "2025-07-20"
+      "category": "family",
+      "deadline": "2028-03-05",
+      "createdAt": "2025-07-21"
     }
   ],
   "deposits": [
@@ -21,6 +15,16 @@
       "id": "32dc",
       "goalId": null,
       "amount": 1000
+    },
+    {
+      "id": "050c",
+      "goalId": null,
+      "amount": 8000
+    },
+    {
+      "id": "761c",
+      "goalId": null,
+      "amount": 141412243
     }
   ]
 }

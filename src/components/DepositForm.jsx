@@ -6,15 +6,13 @@ function DepositForm({ goals, onAddDeposit }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onAddDeposit({
-      goalId: parseInt(goalId),
-      amount: parseFloat(amount),
-    });
+    if (!goalId || !amount) return;
+    onAddDeposit({ goalId: parseInt(goalId), amount: parseFloat(amount) });
     setAmount("");
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="modern-form" onSubmit={handleSubmit}>
       <h2>Make a Deposit</h2>
       <select
         value={goalId}
@@ -29,13 +27,17 @@ function DepositForm({ goals, onAddDeposit }) {
         ))}
       </select>
       <input
+        className="modern-input"
         type="number"
         placeholder="Amount"
         value={amount}
         onChange={(e) => setAmount(e.target.value)}
+        min="0"
+        step="0.01"
         required
       />
       <button type="submit">Deposit</button>
+      <button className="modern-btn" type="submit">Add Deposit</button>
     </form>
   );
 }

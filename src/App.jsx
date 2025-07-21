@@ -6,6 +6,7 @@ import DepositForm from "./components/DepositForm";
 import Overview from "./components/Overview";
 
 
+
 function App() {
   const [goals, setGoals] = useState([]);
   const [deposits, setDeposits] = useState([]);
@@ -66,16 +67,35 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <h1>Smart Goal Planner</h1>
-      <GoalForm onAddGoal={addGoal} />
-      <DepositForm goals={goals} onAddDeposit={addDeposit} />
-      <Overview goals={goals} deposits={deposits} />
-      <GoalList
-        goals={goals}
-        onUpdateGoal={updateGoal}
-        onDeleteGoal={deleteGoal}
-      />
+    <div className="app-modern-bg">
+      <div className="app-modern-container">
+        <header className="app-modern-header">
+          <h1>🚀 Smart Goal Planner</h1>
+          <p className="app-modern-subtitle">Plan, track, and achieve your goals in style!</p>
+        </header>
+        <main>
+          <section className="app-modern-card">
+            <h2 className="app-modern-section-title">Add a New Goal</h2>
+            <GoalForm onAddGoal={addGoal} />
+          </section>
+          <section className="app-modern-card">
+            <h2 className="app-modern-section-title">Make a Deposit</h2>
+            <DepositForm goals={goals} onAddDeposit={addDeposit} />
+          </section>
+          <section className="app-modern-card">
+            <h2 className="app-modern-section-title">Overview</h2>
+            <Overview goals={goals} deposits={deposits} />
+          </section>
+          <section className="app-modern-card">
+            <h2 className="app-modern-section-title">Your Goals</h2>
+            <GoalList
+              goals={goals}
+              onUpdateGoal={updateGoal}
+              onDeleteGoal={deleteGoal}
+            />
+          </section>
+        </main>
+      </div>
     </div>
   );
 }
